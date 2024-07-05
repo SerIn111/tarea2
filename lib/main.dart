@@ -42,13 +42,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   child:
                     Column(
                       children: [
-                        Text('Tu cuenta esta protegida',
-                        // textAlign: TextAlign.left,
-                        style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)
+                        FittedBox(
+                          child: Text('Tu cuenta esta protegida',
+                          // textAlign: TextAlign.left,
+                          style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)
+                          ),
                         ),
-                        Text('La verificacion de seguridad reviso tu cuenta y no encontro accion es recomendadas',
-                          style: TextStyle(fontSize: 16),
+                        FittedBox(
+                          child: Text('La verificacion de seguridad reviso tu cuenta y no encontro accion es recomendadas',
+                            style: TextStyle(fontSize: 16),
+                          ),
                         )
                       ]  
                     ),
