@@ -32,37 +32,38 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: ListView.builder(
-        itemBuilder: (BuildContext context, 2) => ,
-        child: const Row(
-          children: [
-            SizedBox(
-              // color: Colors.red[200],
-              child: FittedBox(
-                child:
-                  Column(
-                    children: [
-                      Text('Tu cuenta esta protegida',
-                      // textAlign: TextAlign.left,
-                      style:
-                      TextStyle(fontSize: 20, fontWeight: FontWeight.bold)
-                      ),
-                      Text('La verificacion de seguridad reviso tu cuenta y no encontro accion es recomendadas',
-                        style: TextStyle(fontSize: 16),
-                      )
-                    ]  
-                  ),
-              )
-            ),
-            SizedBox(
-              child: Row(
-                children: [
-                  Icon(Icons.favorite), 
-                ],
+      body: ListView(
+        children: const [
+          const Row(
+            children: [
+              SizedBox(
+                // color: Colors.red[200],
+                child: FittedBox(
+                  child:
+                    Column(
+                      children: [
+                        Text('Tu cuenta esta protegida',
+                        // textAlign: TextAlign.left,
+                        style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)
+                        ),
+                        Text('La verificacion de seguridad reviso tu cuenta y no encontro accion es recomendadas',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ]  
+                    ),
+                )
               ),
-            )
-          ],
-        ),
+              SizedBox(
+                child: Row(
+                  children: [
+                    Icon(Icons.favorite), 
+                  ],
+                ),
+              )
+            ],
+          ),
+        ],
       ),
     );
   }
